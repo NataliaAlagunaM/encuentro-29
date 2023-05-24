@@ -25,7 +25,11 @@ public class ejercicio9 {
                 System.out.println("Ingrese un número");
                 num=leer.nextInt();
                  i=i+1;
-                 suma=suma+num;
+                 if (num<0){
+                     suma=suma;
+                 } else {
+                     suma=suma+num;
+                 }
                  if (num==0){
                      System.out.println("Se detectó el 0");
                  }
