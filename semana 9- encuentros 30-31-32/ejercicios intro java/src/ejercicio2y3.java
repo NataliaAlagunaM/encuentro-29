@@ -24,7 +24,7 @@ public class ejercicio2y3 {
         boolean verificacion2=num<num2;
         num++;
         num2--;
-        System.out.println(resta);
+        System.out.println(resta + " " + num);
             
     }  
 }
