@@ -22,28 +22,56 @@ import java.util.Scanner;
 public class ejercicio11 {
       public static void main(String[] args) {
       Scanner leer = new Scanner(System.in);
-          System.out.println("Ingrese una frase con punt al final");
+          System.out.println("Ingrese una frase con punto al final");
           String frase=leer.nextLine();
           //longitud de la frase
           int longitud=frase.length();
- /*         while ((frase.substring(longitud-1,longitud))!= "."){
-              System.out.println("Ingrese una frase con punt al final");
+          String ultimaLetra=frase.substring(longitud-1,longitud);
+          System.out.println(ultimaLetra);
+          while ((!ultimaLetra.equals("."))){
+              System.out.println("Ingrese una frase con punto al final");
               frase=leer.nextLine();
-          }*/
+              longitud=frase.length();
+              ultimaLetra=frase.substring(longitud-1,longitud);
+              System.out.println(ultimaLetra);
+          }
  
-          String fraseFinal=cambiarFrase(frase);
+          System.out.println(cambiarFrase(frase));
       }
       
       public static String cambiarFrase(String frase){
-      System.out.println("Ingrese una frase con punt al final");
-   
-      String fraseFinal;
       int longitud=frase.length();
-      char letra;
+      String letra;
+      String aux;
           for (int i = 0; i < longitud ; i++) {
-              letra=frase.substring(i,i);
+              letra=frase.substring(i,i+1);
+              switch (letra){
+             case "a":
+                 aux="@";
+                 break;
+             case "e":
+                 aux="#";
+                 break;
+             case "i":
+                 aux="$";
+                 break;
+             case "o":
+                 aux="%";
+                 break;
+             case "u":
+                 aux="*";
+                 break;
+             default:
+                 aux=letra;
+         }
+              String fraseFinal;
+              fraseFinal="";
+              fraseFinal=fraseFinal.concat(aux);}
+              return fraseFinal;
+             
           }
-      return=fraseFinal;
+     
 }
-}
+      
+
 
