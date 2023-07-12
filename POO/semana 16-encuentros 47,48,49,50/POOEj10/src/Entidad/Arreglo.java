@@ -37,6 +37,10 @@ public class Arreglo {
         this.arregloB = arregloB;
     }
 
+    public void setArregloA(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     
     
 }

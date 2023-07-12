@@ -24,9 +24,6 @@ public class ServicioArreglo {
         }
         a1.setArregloA(vectorAux);
         
-        for (int i = 0; i < 50; i++) {
-            System.out.println();
-        }
         return a1;
     }
     
@@ -35,6 +32,23 @@ public class ServicioArreglo {
     }
     
     public void ordenarArreglo(){
+        double [] vectorAux = new double [50];
+        Arrays.sort(a1.getArregloA());
+        System.out.println(Arrays.toString(a1.getArregloA()));
+    }
+    
+    public void crearArregloB(){
+        double [] vectorAux = new double [20];
+        for (int i = 0; i < 20; i++) {
+            if (i<10) {   
+                vectorAux[i]=a1.getArregloA()[i];
+            } else if (i>=10){
+                vectorAux[i]=0.5;
+            }
+            
+        }
+        a1.setArregloB(vectorAux);
         
+        System.out.println(Arrays.toString(a1.getArregloB()));
     }
 }

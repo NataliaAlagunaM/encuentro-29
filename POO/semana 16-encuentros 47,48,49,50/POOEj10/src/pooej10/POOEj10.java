@@ -30,7 +30,12 @@ ordenados al arreglo B de 20 elementos, y rellenar los 10 últimos elementos con
     public static void main(String[] args) {
      ServicioArreglo sa = new ServicioArreglo();
      sa.crearArreglo();
+        System.out.println("El arreglo A es:");
      sa.mostrarArreglo();
+        System.out.println("El arreglo A ordenado es: ");
+     sa.ordenarArreglo();
+        System.out.println("El arreglo B es:");
+     sa.crearArregloB();
     }
     
 }

@@ -81,8 +81,5 @@ cuanto quedó la taza.*/
         System.out.println("se ha vaciado la cafetera, la cantidad actual de café en la cafetera es: "+this.cantidadActual);
     }
     
-    do {
-            
-        } while (true);
                  
 }
